@@ -1,0 +1,7 @@
+.vocab-box-answer {
+  visibility: hidden;
+}
+
+.vocab-box:hover .vocab-box-answer {
+  visibility: visible;
+}
