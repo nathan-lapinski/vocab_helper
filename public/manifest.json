@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "VocabHelper",
+  "description": "Learn vocab by having it appear everywhere!",
+  "version": "1",
+  "author": "Nate Lapinski",
+ "browser_action": {
+    "default_icon": "tab-icon.png",
+    "default_title": "勉強をしましょう"
+  },
+ "chrome_url_overrides" : {
+   "newtab": "index.html"
+ },
+ "content_security_policy": "script-src 'self' 'sha256-GgRxrVOKNdB4LrRsVPDSbzvfdV4UqglmviH9GoBJ5jk='; object-src 'self'",
+  "permissions": ["activeTab"]
+}
