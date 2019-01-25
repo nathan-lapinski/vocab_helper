@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './VocabBox.css';
+import React from 'react'
+import PropTypes from 'prop-types'
+import './VocabBox.css'
 
 const VocabBox = ({word, answer}) => (
   <div className="vocab-box">
