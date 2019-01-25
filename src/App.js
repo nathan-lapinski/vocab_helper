@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import VocabBox from './vocab-box/VocabBox';
 import VocabList from './vocab-list/VocabList';
 
 class App extends Component {
@@ -17,9 +16,17 @@ class App extends Component {
           },{
             word: '掲載',
             answer: 'Publication'
+          },{
+            word: '利益',
+            answer: 'Profits'
+          },{
+            word: '自己紹介',
+            answer: 'Self Introduction'
+          },{
+            word: '貿易',
+            answer: 'Foreign Trade'
           }]}
         ></VocabList>
-        {/* <VocabBox word="配送便" answer="Delivery Service"/> */}
       </div>
     );
   }
