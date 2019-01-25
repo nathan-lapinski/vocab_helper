@@ -1,7 +1,11 @@
+.vocab-box {
+  width: 200px;
+  height: 150px;
+  font-size: 2em;
+}
 .vocab-box-answer {
   visibility: hidden;
 }
-
 .vocab-box:hover .vocab-box-answer {
   visibility: visible;
 }
