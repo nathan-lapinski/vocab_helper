@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './VocabList.css';
 import VocabBox from '../vocab-box/VocabBox';
 
-export default ({vocabWords}) => (
+const VocabList = ({vocabWords}) => (
     <div className="vocab-list">
       {vocabWords.map(v => (
           <VocabBox
@@ -11,4 +12,10 @@ export default ({vocabWords}) => (
           ></VocabBox>
           ))}
     </div>
-);
+)
+
+VocabList.propTypes = {
+  vocabWords: PropTypes.array.isRequired
+}
+
+export default VocabList
