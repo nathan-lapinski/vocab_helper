@@ -1,5 +1,27 @@
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import VocabList from '../vocab-list'
+import { vocabWordsRequest } from '../../state/vocab/vocabActions'
+import VocabList from '../vocab-list/VocabList'
+
+class VocabListContainer extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  componentDidMount() {
+    this.props.dispatch(vocabWordsRequest())
+  }
+
+  render() {
+    return (
+      <div>
+        <VocabList
+          vocabWords={this.props.vocabWords}
+        ></VocabList>
+      </div>
+    )
+  }
+}
 
 const mapStateToProps = state => {
   return {
@@ -7,15 +29,4 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    
-  }
-}
-
-const VocabListContainer = connect(
-  mapStateToProps,
-  () => {}
-)(VocabList)
-
-export default VocabListContainer
+export default connect(mapStateToProps)(VocabListContainer)

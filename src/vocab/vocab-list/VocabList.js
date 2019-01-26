@@ -10,7 +10,7 @@ const VocabList = ({vocabWords}) => (
             word={v.word}
             reading={v.reading}
             answer={v.answer}
-          >{console.log(v)}</VocabBox>
+          ></VocabBox>
           ))}
     </div>
 )

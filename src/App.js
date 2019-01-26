@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import VocabListContainer from './vocab/containers/VocabListContainer'
 import VocabList from './vocab/vocab-list/VocabList';
 
 class App extends Component {
@@ -9,7 +10,8 @@ class App extends Component {
         <header className="App-header">
           <h1>覺</h1>
         </header>
-        <VocabList
+        <VocabListContainer></VocabListContainer>
+        {/* <VocabList
           vocabWords={[{
             word: '配送便',
             answer: 'Delivery Service'
@@ -26,7 +28,7 @@ class App extends Component {
             word: '貿易',
             answer: 'Foreign Trade'
           }]}
-        ></VocabList>
+        ></VocabList> */}
       </div>
     );
   }
