@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import VocabList from './vocab-list/VocabList';
+import VocabList from './vocab/vocab-list/VocabList';
 
 class App extends Component {
   render() {
