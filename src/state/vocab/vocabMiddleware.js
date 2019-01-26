@@ -24,18 +24,23 @@ function* vocabRequestSaga() {
 // from a real endpoint
 const testData = [{
     word: '配送便',
+    reading: 'はいそうびん',
     answer: 'Delivery Service'
   },{
     word: '掲載',
+    reading: 'けいさい',
     answer: 'Publication'
   },{
     word: '利益',
+    reading: 'りえき',
     answer: 'Profits'
   },{
     word: '自己紹介',
+    reading: 'じこしょうかい',
     answer: 'Self Introduction'
   },{
     word: '貿易',
+    reading: 'ぼうえき',
     answer: 'Foreign Trade'
   }]
 const fetchTestData = () => (new Promise((res, rej) => {

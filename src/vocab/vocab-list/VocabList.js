@@ -8,8 +8,9 @@ const VocabList = ({vocabWords}) => (
       {vocabWords.map(v => (
           <VocabBox
             word={v.word}
+            reading={v.reading}
             answer={v.answer}
-          ></VocabBox>
+          >{console.log(v)}</VocabBox>
           ))}
     </div>
 )

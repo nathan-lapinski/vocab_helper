@@ -3,9 +3,16 @@
   height: 150px;
   font-size: 2em;
 }
+.vocab-box-reading {
+  visibility: hidden;
+}
 .vocab-box-answer {
   visibility: hidden;
 }
 .vocab-box:hover .vocab-box-answer {
+  visibility: visible;
+}
+
+.vocab-box:hover .vocab-box-reading {
   visibility: visible;
 }
