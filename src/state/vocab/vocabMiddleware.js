@@ -43,11 +43,7 @@ const testData = [{
     reading: 'ぼうえき',
     answer: 'Foreign Trade'
   }]
-const fetchTestData = () => (new Promise((res, rej) => {
-  setTimeout(() => {
-    res(testData)
-  }, 1000)
-}))
+const fetchTestData = () => Promise.resolve(testData)
 // END TEST CODE
 
 export default vocabRequestSaga;
