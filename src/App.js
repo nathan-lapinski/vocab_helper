@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import VocabListContainer from './vocab/containers/VocabListContainer'
-import VocabAddForm from './vocab/vocab-add-form/VocabAddForm';
+import VocabFormContainer from './vocab/containers/VocabFormContainer';
 class App extends Component {
   render() {
     return (
@@ -10,7 +10,7 @@ class App extends Component {
           覺
         </header>
         <aside className='App-aside'>
-          <VocabAddForm></VocabAddForm>
+          <VocabFormContainer></VocabFormContainer>
         </aside>
         <main className='App-main'>
           <VocabListContainer></VocabListContainer>
