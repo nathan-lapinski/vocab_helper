@@ -1,34 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
 import VocabListContainer from './vocab/containers/VocabListContainer'
-import VocabList from './vocab/vocab-list/VocabList';
-
+import VocabAddForm from './vocab/vocab-add-form/VocabAddForm';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1>覺</h1>
+      <div className='App App-container'>
+        <header className='App-header'>
+          覺
         </header>
-        <VocabListContainer></VocabListContainer>
-        {/* <VocabList
-          vocabWords={[{
-            word: '配送便',
-            answer: 'Delivery Service'
-          },{
-            word: '掲載',
-            answer: 'Publication'
-          },{
-            word: '利益',
-            answer: 'Profits'
-          },{
-            word: '自己紹介',
-            answer: 'Self Introduction'
-          },{
-            word: '貿易',
-            answer: 'Foreign Trade'
-          }]}
-        ></VocabList> */}
+        <aside className='App-aside'>
+          <VocabAddForm></VocabAddForm>
+        </aside>
+        <main className='App-main'>
+          <VocabListContainer></VocabListContainer>
+        </main>
+        <footer className='App-footer'></footer>
       </div>
     );
   }

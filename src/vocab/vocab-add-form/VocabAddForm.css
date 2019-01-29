@@ -1,0 +1,28 @@
+.vocab-add-form-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.vocab-add-form-view-container > .vocab-form-field {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+}
+
+.vocab-add-form-input {
+  border: 2px solid black;
+}
+
+.vocab-add-form-button {
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: calc(10px + 4vmin);
+  color: #764ABC;
+}
+
+.vocab-add-form-button:hover {
+  background-color: #764ABC;
+  color: white;
+}
