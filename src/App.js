@@ -9,12 +9,14 @@ class App extends Component {
         <header className='App-header'>
           覺
         </header>
-        <aside className='App-aside'>
-          <VocabFormContainer></VocabFormContainer>
-        </aside>
-        <main className='App-main'>
-          <VocabListContainer></VocabListContainer>
-        </main>
+        <div className='App-main-container'>
+          <aside className='App-aside'>
+            <VocabFormContainer></VocabFormContainer>
+          </aside>
+          <main className='App-main'>
+            <VocabListContainer></VocabListContainer>
+          </main>
+        </div>
         <footer className='App-footer'></footer>
       </div>
     );
