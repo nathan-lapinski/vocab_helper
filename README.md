@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is a Chrome extension which can be used to store a list of Japanese vocabulary words. It will then display those words every time you open a new tab.
 
+It will be extended to other browsers in the future
+
 ## Available Scripts
 
 In the project directory, you can run:
