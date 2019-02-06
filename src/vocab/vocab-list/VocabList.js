@@ -3,13 +3,15 @@ import PropTypes from 'prop-types'
 import './VocabList.css'
 import VocabBox from '../vocab-box/VocabBox'
 
-const VocabList = ({vocabWords}) => (
+const VocabList = ({vocabWords, onRemove}) => (
     <div className="vocab-list">
       {vocabWords.map(v => (
           <VocabBox
+            id={v.id}
             word={v.word}
             reading={v.reading}
             answer={v.answer}
+            onRemove={onRemove}
           ></VocabBox>
           ))}
     </div>
