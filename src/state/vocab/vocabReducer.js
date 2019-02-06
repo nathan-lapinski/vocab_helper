@@ -21,7 +21,6 @@ export const vocabReducer = (state=[], action) => {
     }
     case VOCAB_WORDS_REMOVE: {
       const { id } = action.payload
-      console.log(`Removing the ${id} word`)
       // TODO: Put this under test to ensure this isnt' trashing other state
       return [
         ...state.filter(word => word.id !== id)
