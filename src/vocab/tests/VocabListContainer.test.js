@@ -18,7 +18,6 @@ describe(`The VocabListContainer Component`, () => {
       }
 
       const componentState = mapStateToProps(appState, ownProps)
-      console.log(componentState)
       expect(componentState).toEqual({vocabWords: [testWord]})
     })
   })
