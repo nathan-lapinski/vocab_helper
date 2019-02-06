@@ -1,7 +1,11 @@
 .vocab-box {
   width: 200px;
-  height: 150px;
   font-size: 2em;
+}
+.vocab-box-remove {
+  visibility: hidden;
+  cursor: pointer;
+  float: left;
 }
 .vocab-box-reading {
   visibility: hidden;
@@ -14,5 +18,9 @@
 }
 
 .vocab-box:hover .vocab-box-reading {
+  visibility: visible;
+}
+
+.vocab-box:hover .vocab-box-remove {
   visibility: visible;
 }
