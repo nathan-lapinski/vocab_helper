@@ -4,6 +4,11 @@ This is a Chrome extension which can be used to store a list of Japanese vocabul
 
 It will be extended to other browsers in the future
 
+Current Features:
+ - Add new vocab by entering the vocab information using the form
+ - Remove a vocab word by clicking its 'x' button
+ - Words are stored using localstorage, so the data is persisted across page refreshes
+
 ## Available Scripts
 
 In the project directory, you can run:
