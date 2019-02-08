@@ -9,7 +9,6 @@ class VocabListContainer extends Component {
   }
 
   componentDidMount() {
-    // this.props.dispatch(vocabWordsRequest())
     this.props.onMount()
   }
 
