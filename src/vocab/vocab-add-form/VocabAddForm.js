@@ -28,6 +28,10 @@ const VocabAddForm = ({onSubmit}) => {
             word: word.value,
             reading: reading.value,
             answer: answer.value})
+          // clear the form
+          word.value = ''
+          reading.value = ''
+          answer.value = ''
         }
       }
     >付ける</button>
